@@ -1,9 +1,23 @@
 {
   "name": "mcp-mvp-server",
   "version": "1.0.0",
-  "private": true,
+  "description": "MCP server that fetches user profiles from an API",
+  "bin": {
+    "mcp-mvp-server": "./dist/mcp-server.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/mcp-server.js --format=cjs --banner:js='#!/usr/bin/env node'"
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/mcp-server.js --format=cjs --banner:js='#!/usr/bin/env node'",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "model-context-protocol"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkawk-open/mcp-mvp.git",
+    "directory": "mcp-server"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
