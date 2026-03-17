@@ -25,6 +25,12 @@ The API lives at `https://api.mcp-mvp.bkawk.com` and the compiled MCP server bun
 claude mcp add -s user mcp-mvp -- npx -y mcp-mvp-server
 ```
 
+To remove:
+
+```bash
+claude mcp remove -s user mcp-mvp
+```
+
 ### Claude Desktop
 
 Add to `~/.config/Claude/claude_desktop_config.json` (Linux) or `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS):
