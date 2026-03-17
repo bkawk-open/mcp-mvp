@@ -22,7 +22,7 @@ The API lives at `https://api.mcp-mvp.bkawk.com` and the compiled MCP server bun
 ### Claude Code
 
 ```bash
-claude mcp add mcp-mvp -- npx -y mcp-mvp-server
+claude mcp add -s user mcp-mvp -- npx -y mcp-mvp-server
 ```
 
 ### Claude Desktop
