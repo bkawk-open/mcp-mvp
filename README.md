@@ -21,17 +21,8 @@ The API lives at `https://api.mcp-mvp.bkawk.com` and the compiled MCP server bun
 
 ### Claude Code
 
-Add to `~/.claude/settings.json`:
-
-```json
-{
-  "mcpServers": {
-    "mcp-mvp": {
-      "command": "npx",
-      "args": ["-y", "mcp-mvp-server"]
-    }
-  }
-}
+```bash
+claude mcp add mcp-mvp -- npx -y mcp-mvp-server
 ```
 
 ### Claude Desktop
